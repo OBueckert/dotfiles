@@ -1,0 +1,88 @@
+{
+   "modules-left": ["custom/archlogo", "custom/line_separator", "sway/workspaces"],
+   "modules-center": ["clock", "idle_inhibitor"],
+   "modules-right": ["network#icon", "network", "battery", "battery#status", "wireplumber"],
+
+   "wireplumber": {
+      "format": "{icon}   {volume}%",
+      "format-muted": " ",
+      "format-icons": ["", "", ""],
+      "max-volume": 150,
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+   },
+
+   "battery#status": {
+      "interval": 2,
+      "format": "",
+      "format-charging": "",
+      "tooltip": false
+   },
+
+   "battery": {
+      "interval": 2,
+      "format": "{icon}",
+      "format-icons": ["", "", "", "", ""],
+      "tooltip-format": "{capacity}%"
+   },
+
+   "network": {
+      "interval": 2,
+      "format": "{essid}",
+      "format-disconnected": "",
+      "tooltip": false
+   },
+
+   "network#icon": {
+      "interval": 2,
+      "format": "{icon}",
+      "format-icons": {
+         "wifi": ["󰤟", "󰤢", "󰤥", "󰤨"],
+         "ethernet": ["󰈀"],
+         "disconnected": [""]
+      },
+      "tooltip": false
+   },
+
+   "custom/archlogo": {
+      "format": "",
+      "on-click": "~/.config/rofi/powermenu/powermenu.sh",
+      "tooltip": false
+   },
+
+   "custom/line_separator": {
+      "format": "|"
+   },
+
+   "sway/workspaces": {
+      "disable-scroll": true,
+      "persistent-workspaces": {
+         "1": [],
+         "2": [],
+         "3": [],
+         "4": [],
+         "5": [],
+         "6": [],
+         "7": [],
+         "9": [],
+         "10": [],
+      },
+      "format": "{icon}",
+      "format-icons": {
+         "default": "",
+         "focused": "",
+      },
+   },
+
+   "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+         "activated": "",
+         "deactivated": ""
+      },
+      "tooltip": false
+   },
+
+   "clock": {
+      "tooltip": false
+   }
+}

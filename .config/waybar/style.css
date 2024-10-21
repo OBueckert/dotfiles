@@ -1,0 +1,105 @@
+* {
+   color: #979EAB;
+   font-size: 100%;
+   font-family: Inter;
+   border-radius: 20px;
+}
+
+window {
+}
+
+window#waybar {
+   background: transparent;
+}
+.modules-right {
+   border: 1px solid #454C59;
+   font-size: 1.4em;
+   background-color: #282C34;
+   margin: 0.5em 0.5em 0 0;
+   padding: 0 0.4em 0 0.4em;
+}
+
+#wireplumber {
+   margin: 0 0 0 0.3em;
+}
+
+#battery {
+   margin: 0 0.8em 0 0;
+}
+
+#battery.status {
+   font-size: 0.6em;
+   margin: 0 0.5em 0 0;
+}
+
+#network {
+   margin: 0 0.5em 0 0;
+}
+
+#network.icon {
+   margin: 0 0.6em 0 0;
+}
+
+.modules-center {
+   border: 1px solid #454C59;
+   font-size: 1.4em;
+   background-color: #282C34;
+   margin: 0.5em 0 0 0;
+}
+
+#clock {
+   margin: 0.1em 0.1em 0.1em 0.4em;
+}
+
+#idle_inhibitor {
+   margin: 0.1em 1em 0.1em 0.1em;
+}
+
+.modules-left {
+   font-size: 1.4em;
+   border: 1px solid #454C59;
+   background-color: #282C34;
+   margin: 0.5em 0 0 0.5em;
+   padding: 0 0.4em 0 0.5em;
+}
+
+#custom-archlogo {
+   color: #61AFEF;
+   margin: 0 0.7em 0 0;
+}
+
+#custom-line_separator {
+   margin: 0 0.2em 0 0;
+}
+
+#workspaces button {
+   box-shadow: inherit;
+   text-shadow: inherit;
+   border: none;
+   padding: 0 0.2em 0 0;
+}
+
+#workspaces button:hover {
+   box-shadow: inherit;
+   text-shadow: inherit;
+   border: none;
+   background: transparent;
+   background-color: transparent;
+}
+/* #979EAB #808691 #454C59 */
+#workspaces button label {
+   font-size: 0.7em;
+   color: #696F78;
+}
+
+#workspaces button:hover label {
+   color: #454C59;
+}
+
+#workspaces button.empty label {
+   color: #979EAB;
+}
+
+#workspaces button:hover.empty label {
+   color: #808691;
+}

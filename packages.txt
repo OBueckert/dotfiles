@@ -1,0 +1,4 @@
+swayfx
+waybar
+ttf-firacode-nerd
+neovim
