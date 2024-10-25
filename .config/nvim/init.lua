@@ -1,1 +1,1 @@
-require("owen")
+require("config")
